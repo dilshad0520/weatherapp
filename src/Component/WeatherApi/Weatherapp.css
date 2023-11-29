@@ -13,11 +13,11 @@ body {
 }
 .weather-wrap{
     display: flex;
-    column-gap: 50px;
+    column-gap: 40px;
     margin-bottom: 10px;
 }
 .weather-area{
-    width:41%;
+    width:40%;
 }
 input {
     margin-top: 15px;
@@ -148,6 +148,7 @@ font-size: 16px;
 }
 .forcast-area{
     margin-top: 10px;
+    width: 50%;
 }
 .forcast-head{
     margin-bottom: 30px;
@@ -159,8 +160,8 @@ font-size: 16px;
 }
 .forcast-scroll{
     overflow-y: scroll;
-    width: 300px;
-    height: 300px;
+    /* width: 300px; */
+    height: 355px;
 }
 .forcast-wrap{
     display: flex;
@@ -219,12 +220,83 @@ color: #fff;
     color: white;
     margin-right: 15px;
 }
-    body {
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .weather-wrap {
+        flex-direction: column; /* Stack items vertically */
+        column-gap: 0; /* No gap between columns */
+    }
+
+    .weather-area {
+        width: 100%; /* Occupy full width */
+        margin-bottom: 20px; /* Add some space between items */
+    }
+
+    input {
+        width: 82%; /* Occupy full width */
+        margin: 10px 0; /* Adjust margin for input */
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .current-time {
+        width: 100%; /* Occupy full width */
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .weather-content h2 {
+        font-size: 28px; /* Adjust heading size */
+    }
+    .forcast-area{
+        width: 100%;
+    }
+
+    .forcast-head h2 {
+        font-size: 23px; /* Adjust heading size */
+    }
+
+    .forcast-data {
+        width: 100%; /* Occupy full width */
+        padding: 0; /* Reset padding */
+    }
+
+    .forcast-scroll {
+        height: 300px; /* Set fixed height for scrolling */
+    }
+
+    .forcast-scroll::-webkit-scrollbar{
+        display: none;
+    }
+    .forcast-haze{
+        width: 117px;
+    }
+
+    .clouds-main {
+        width: 115px; /* Adjust width */
+        height: 130px; /* Adjust height */
+    }
+
+    .highlighttag h3 {
+        font-size: 20px; /* Adjust font size */
+        margin-bottom: 20px; /* Adjust margin */
+    }
+
+    .highlighttag h2 {
+        font-size: 15px; /* Adjust font size */
+    }
+
+    .highheads h2 {
+        font-size: 25px; /* Adjust font size */
+        margin-top: 10px; /* Adjust margin */
+    }
+
+    /* Add more responsive styles for other elements within this media query */
+}
+    /* body {
         background-image: linear-gradient(hsl(205.55, 61.75%, 53.78%), hsl(209.03, 42.47%, 85.69%));
         background-repeat: no-repeat;
         font-family: Arial, sans-serif; 
-    }
-    @media screen and (max-width: 768px) {
+    } */
+    /* @media screen and (max-width: 768px) {
         .weather-area {
             width: 100%;
         }
@@ -232,8 +304,8 @@ color: #fff;
             flex-direction: column; 
             column-gap: 0;
         }
-    }
-    @media screen and (max-width: 480px) {
+    } */
+    /* @media only screen and (min-width: 320px)and (max-width:480px) {
         .weather-icon {
             width: 30px; 
             font-size: 14px;
@@ -277,6 +349,6 @@ color: #fff;
             font-size: 25px;
             margin-top: 10px;
         }
-    }
+    } */
 
 
