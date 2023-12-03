@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 .container {
-    max-width: 100%; /* Adjusted for smaller screens */
-    padding: 0 20px; /* Adding padding for smaller screens */
+    max-width: 100%;
+    padding: 0 20px; 
 }
 body {
     background-image: linear-gradient(hsl(205.55, 61.75%, 53.78%), hsl(209.03, 42.47%, 85.69%));;
@@ -160,7 +160,6 @@ font-size: 16px;
 }
 .forcast-scroll{
     overflow-y: scroll;
-    /* width: 300px; */
     height: 355px;
 }
 .forcast-wrap{
@@ -223,44 +222,44 @@ color: #fff;
 
 @media screen and (min-width:320px) and (max-width:480px) {
     .weather-wrap {
-        flex-direction: column; /* Stack items vertically */
-        column-gap: 0; /* No gap between columns */
+        flex-direction: column; 
+        column-gap: 0; 
     }
 
     .weather-area {
-        width: 100%; /* Occupy full width */
-        margin-bottom: 20px; /* Add some space between items */
+        width: 100%; 
+        margin-bottom: 20px;
     }
 
     input {
-        width: 82%; /* Occupy full width */
-        margin: 10px 0; /* Adjust margin for input */
-        font-size: 14px; /* Reduce font size */
+        width: 82%;
+        margin: 10px 0; 
+        font-size: 14px;
     }
 
     .current-time {
-        width: 100%; /* Occupy full width */
-        font-size: 14px; /* Reduce font size */
+        width: 100%; 
+        font-size: 14px; 
     }
 
     .weather-content h2 {
-        font-size: 28px; /* Adjust heading size */
+        font-size: 28px;
     }
     .forcast-area{
         width: 100%;
     }
 
     .forcast-head h2 {
-        font-size: 23px; /* Adjust heading size */
+        font-size: 23px; 
     }
 
     .forcast-data {
-        width: 100%; /* Occupy full width */
-        padding: 0; /* Reset padding */
+        width: 100%;
+        padding: 0; 
     }
 
     .forcast-scroll {
-        height: 300px; /* Set fixed height for scrolling */
+        height: 300px; 
     }
 
     .forcast-scroll::-webkit-scrollbar{
@@ -271,84 +270,25 @@ color: #fff;
     }
 
     .clouds-main {
-        width: 115px; /* Adjust width */
-        height: 130px; /* Adjust height */
+        width: 115px;
+        height: 130px; 
     }
 
     .highlighttag h3 {
-        font-size: 20px; /* Adjust font size */
-        margin-bottom: 20px; /* Adjust margin */
+        font-size: 20px;
+        margin-bottom: 20px;
     }
 
     .highlighttag h2 {
-        font-size: 15px; /* Adjust font size */
+        font-size: 15px;
     }
 
     .highheads h2 {
-        font-size: 25px; /* Adjust font size */
-        margin-top: 10px; /* Adjust margin */
+        font-size: 25px; 
+        margin-top: 10px;
     }
 
-    /* Add more responsive styles for other elements within this media query */
+    
 }
-    /* body {
-        background-image: linear-gradient(hsl(205.55, 61.75%, 53.78%), hsl(209.03, 42.47%, 85.69%));
-        background-repeat: no-repeat;
-        font-family: Arial, sans-serif; 
-    } */
-    /* @media screen and (max-width: 768px) {
-        .weather-area {
-            width: 100%;
-        }
-        .weather-wrap {
-            flex-direction: column; 
-            column-gap: 0;
-        }
-    } */
-    /* @media only screen and (min-width: 320px)and (max-width:480px) {
-        .weather-icon {
-            width: 30px; 
-            font-size: 14px;
-        }
-        input {
-            width: 200px;
-        }
-        .current-time {
-            width: 250px;
-            font-size: 14px; 
-        }
-        .weather-forcast h2{
-            font-size: 22px;
-        }
-        .weather-content h2 {
-            font-size: 28px; 
-        }
-        .forcast-head h2{
-            font-size: 23px;
-        }
-        .forcast-data {
-            width: 250px;
-            padding: 0; 
-        }
-        .forcast-scroll {
-            height: 300px;
-        }
-        .clouds-main {
-            width: 115px; 
-            height: 130px; 
-        }
-        
-        .highlighttag h3 {
-            font-size: 20px; 
-            margin-bottom: 20px; 
-        }
-        .highlighttag h2{
-            font-size: 15px;
-        }
-        .highheads h2{
-            font-size: 25px;
-            margin-top: 10px;
-        }
-    } */
-
-
+    
+    
