@@ -241,6 +241,13 @@ color: #fff;
         width: 100%; 
         font-size: 14px; 
     }
+    .weather-forcast h2{
+        text-align: center;
+    }
+    .weather-forcast-day{
+        display: flex;
+        justify-content: space-around;
+    }
 
     .weather-content h2 {
         font-size: 28px;
@@ -251,6 +258,7 @@ color: #fff;
 
     .forcast-head h2 {
         font-size: 23px; 
+        text-align: center;
     }
 
     .forcast-data {
@@ -266,11 +274,19 @@ color: #fff;
         display: none;
     }
     .forcast-haze{
-        width: 117px;
+        /* width: 117px; */
+        width: 44%;
+    }
+    .forcast-haze h3{
+        color: white;
+    }
+    .forcast-dayname h5{
+        font-size: 25px;
     }
 
     .clouds-main {
-        width: 115px;
+        /* width: 115px; */
+        width: 44%;
         height: 130px; 
     }
 
